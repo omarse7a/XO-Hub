@@ -1,0 +1,8 @@
+rgb(0, 58, 128) dark
+rgb(51, 145, 255) light
+rgb(128, 187, 255) lighter
+
+fonts:
+
+Agency FB
+Haettenschweiler
