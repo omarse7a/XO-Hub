@@ -30,16 +30,6 @@ Connect4::Connect4(QWidget *parent, bool isComputer)
             if (board[i][j]) {
                 connect(board[i][j], &QPushButton::clicked, this, &Connect4::on_gridButtonClicked);
             }
-
-            // if (board[i][j]) {
-            //     // Connect the button click to a lambda function emitting a signal
-            //     connect(board[i][j], &QPushButton::clicked, this, [this, i, j]() {
-            //         emit gridButtonClicked(i, j);
-            //     });
-
-            //     // Connect the emitted signal to the private slot
-            //     connect(this, &Connect4::gridButtonClicked, this, &Connect4::on_gridButtonClicked);
-            // }
         }
     }
 }

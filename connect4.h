@@ -22,9 +22,6 @@ public:
     bool is_draw();
     bool game_is_over();
 
-signals:
-    void gridButtonClicked(int row, int col);
-
 private slots:
     void on_gridButtonClicked();
 

@@ -11,6 +11,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->backToMain->hide();
     ui->playerLabel2->hide();
     ui->name2->hide();
+    ui->name1->setFocus();
 }
 
 MainWindow::~MainWindow()
@@ -36,7 +37,10 @@ void MainWindow::on_btn_confirm_clicked()
 
 void MainWindow::on_name1_returnPressed()
 {
-    confirm();
+    if(ui->add_comp->isChecked())
+        confirm();
+    else
+        ui->name2->setFocus();
 }
 
 void MainWindow::on_name2_returnPressed()
