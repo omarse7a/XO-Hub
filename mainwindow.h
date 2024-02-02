@@ -14,6 +14,7 @@ class MainWindow;
 }
 QT_END_NAMESPACE
 
+/*This class manages the game menu and transitions from one form to another*/
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -23,8 +24,6 @@ public:
     ~MainWindow();
 
 private slots:
-    void confirm();
-
     void on_btn_confirm_clicked();
 
     void on_btn_XO_clicked();
@@ -37,11 +36,7 @@ private slots:
 
     void on_backToMain_clicked();
 
-    void on_add_player_toggled(bool checked);
-
-    void on_name1_returnPressed();
-
-    void on_name2_returnPressed();
+    void on_btn_instructions_clicked();
 
 private:
     Ui::MainWindow *ui;

@@ -8,6 +8,9 @@ namespace Ui {
 class TicTacToe5x5;
 }
 
+/*This class represents a tictactoe variation where the board is 5x5
+  and winner is determined by scoring the most 3 in-a-row.
+  It handles the game's logic and board management*/
 class TicTacToe5x5 : public QWidget, public Board
 {
     Q_OBJECT

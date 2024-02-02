@@ -8,6 +8,8 @@ namespace Ui {
 class Connect4;
 }
 
+/*This class represents the connect-four game handling the game's logic
+  and board management*/
 class Connect4 : public QWidget, public Board
 {
     Q_OBJECT

@@ -8,7 +8,9 @@ namespace Ui {
 class TicTacToe;
 }
 
-class TicTacToe : public QWidget, public Board
+/*This class represents the tictactoe game handling the game's logic
+  and board management*/
+class TicTacToe : public QWidget, public Board  //multiple inheritance
 {
     Q_OBJECT
 

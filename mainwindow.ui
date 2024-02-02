@@ -193,7 +193,7 @@ QPushButton:hover {
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
             <property name="text">
-             <string>Add new player</string>
+             <string>Add a new player</string>
             </property>
            </widget>
           </item>
@@ -228,7 +228,7 @@ QPushButton:hover {
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
             <property name="text">
-             <string>Add computer player</string>
+             <string>Add a computer player</string>
             </property>
            </widget>
           </item>
@@ -261,205 +261,20 @@ QPushButton:hover {
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_3">
-          <property name="spacing">
-           <number>0</number>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
           </property>
-          <property name="leftMargin">
-           <number>0</number>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
           </property>
-          <property name="topMargin">
-           <number>50</number>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
           </property>
-          <property name="bottomMargin">
-           <number>50</number>
-          </property>
-          <item>
-           <spacer name="horizontalSpacer_2">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeType">
-             <enum>QSizePolicy::MinimumExpanding</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <widget class="QLabel" name="playerLabel1">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>100</width>
-              <height>30</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <family>Bahnschrift SemiLight Condensed</family>
-              <pointsize>14</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>Player Name:</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLineEdit" name="name1">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>200</width>
-              <height>30</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <family>Bahnschrift SemiLight SemiConde</family>
-              <pointsize>12</pointsize>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(255, 255, 255);
-color: black;
-border-radius: 3px;</string>
-            </property>
-            <property name="placeholderText">
-             <string>Enter Game Name</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <spacer name="horizontalSpacer_5">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_4">
-          <property name="spacing">
-           <number>0</number>
-          </property>
-          <property name="leftMargin">
-           <number>0</number>
-          </property>
-          <property name="topMargin">
-           <number>50</number>
-          </property>
-          <property name="bottomMargin">
-           <number>50</number>
-          </property>
-          <item>
-           <spacer name="horizontalSpacer_6">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeType">
-             <enum>QSizePolicy::MinimumExpanding</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <widget class="QLabel" name="playerLabel2">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>100</width>
-              <height>30</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <family>Bahnschrift SemiLight Condensed</family>
-              <pointsize>14</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>Player 2 Name:</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLineEdit" name="name2">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>200</width>
-              <height>30</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <family>Bahnschrift SemiLight SemiConde</family>
-              <pointsize>12</pointsize>
-              <bold>false</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(255, 255, 255);
-color: black;
-border-radius: 3px;</string>
-            </property>
-            <property name="placeholderText">
-             <string>Enter Game Name</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <spacer name="horizontalSpacer_7">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-         </layout>
+         </spacer>
         </item>
         <item>
          <widget class="QPushButton" name="btn_confirm">
@@ -525,7 +340,7 @@ QPushButton:hover {
           <property name="font">
            <font>
             <family>Agency FB</family>
-            <pointsize>72</pointsize>
+            <pointsize>48</pointsize>
             <bold>true</bold>
            </font>
           </property>
@@ -669,7 +484,7 @@ QPushButton:hover {
           <property name="styleSheet">
            <string notr="true">QPushButton {
     border: 1px solid rgb(0, 70, 140); /* Default border */
-
+	border-bottom: 1px solid rgb(128, 187, 255);
 }
 
 QPushButton:hover {
@@ -682,7 +497,103 @@ QPushButton:hover {
           </property>
          </widget>
         </item>
+        <item>
+         <widget class="QPushButton" name="btn_instructions">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <family>Agency FB</family>
+            <pointsize>24</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	color : rgb(51, 145, 255);
+    border: 1px solid rgb(0, 70, 140); /* Default border */
+
+}
+
+QPushButton:hover {
+    background-color: rgb(0, 87, 153); /* Background color on hover */
+	color: white;
+}</string>
+          </property>
+          <property name="text">
+           <string>How to play?</string>
+          </property>
+         </widget>
+        </item>
        </layout>
+      </widget>
+      <widget class="QWidget" name="instructions">
+       <widget class="QLabel" name="rules">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>-20</y>
+          <width>821</width>
+          <height>621</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift SemiLight SemiConde</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>IBeamCursor</cursorShape>
+        </property>
+        <property name="text">
+         <string>1-Tic-Tac-Toe (The traditional)
+The game board is 3 x 3 grid. Players take turns marking Xs and Os
+
+Winning: The first player to get three-in-a-row vertically, horizontally, or diagonally wins.
+
+2- Pyramic Tic-Tac-Toe
+The game board is shaped like a pyramid. Five squares make the base, then three, then one.
+Players take turns marking Xs and Os as in traditional tic-tac-toe.
+
+Winning: The first player to get three-in-a-row vertically, horizontally, or diagonally wins.
+ 
+3- Four-in-a-row
+You will recognize four-in-a row as a two-dimensional version of the classic game, Connect Four.
+The game board consists of a 7 x 6 grid. Seven columns of six squares each. 
+Instead of dropping counters as in Connect Four, players mark the grid with Xs and Os as in tic-tac-toe.
+
+Rules: The first player places an X in the bottom square of any column. 
+Taking turns, players make their mark in any column, as long as it is in the lowest square possible.
+
+Winning: The first player to get four-in-a-row vertically, horizontally, or diagonally wins.
+ 
+4- 5 x 5 Tic Tac Toe 
+This tic-tac-toe variation is played on a 5 x 5 grid. As in the traditional game, players are Xs or Os.
+
+Rules: Players take turns placing an X or an O in one of the squares until all the squares except one are filled. 
+(Each player has 12 turns for a total of 24 squares.) 
+
+Winning: Count the number of three-in-a-rows each player has. Sequences can be vertically, horizontally, or diagonally. 
+Whoever has the most, wins.</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="margin">
+         <number>30</number>
+        </property>
+        <property name="textInteractionFlags">
+         <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+        </property>
+       </widget>
       </widget>
      </widget>
     </item>

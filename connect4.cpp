@@ -20,7 +20,7 @@ Connect4::Connect4(QWidget *parent, bool isComputer)
     player = "X";
     n_rows = 6;
     n_cols = 7;
-    // Initialize the board with button pointers
+    // Initializing array board with pointers to buttons
     board = new QPushButton**[n_rows];
     for (int i = 0; i < n_rows; ++i) {
         board[i] = new QPushButton*[n_cols];

@@ -3,7 +3,8 @@
 
 #include <QPushButton>
 
-
+/*It represents a board of buttons for the XO games with options for
+    player-vs-player or player-vs-computer modes*/
 class Board {
 protected:
     int n_rows, n_cols;
@@ -12,10 +13,10 @@ protected:
     QString player;
     bool isComp, gameEnd = false;
 public:
+    //Switch the players' turns
     virtual void switch_player() = 0;
-
+    // Makes random move for the computer player
     virtual void random_move() = 0;
-
     // Returns true if there is any winner
     // either X or O
     // Written in a complex way. DO NOT DO LIKE THIS.

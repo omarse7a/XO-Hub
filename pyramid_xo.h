@@ -9,6 +9,8 @@ namespace Ui {
 class Pyramid_XO;
 }
 
+/*This class represents a tictactoe variant game where the board in pyramid shaped.
+  It handles the game's logic and board management*/
 class Pyramid_XO : public QWidget, public Board
 {
     Q_OBJECT
