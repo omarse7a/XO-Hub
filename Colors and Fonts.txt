@@ -1,6 +1,6 @@
-rgb(0, 58, 128) dark
-rgb(51, 145, 255) light
-rgb(128, 187, 255) lighter
+rgb(0, 58, 128) dark blue
+rgb(51, 145, 255) light blue
+rgb(128, 187, 255) lighter blue
 
 fonts:
 

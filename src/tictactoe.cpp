@@ -1,4 +1,4 @@
-#include "tictactoe.h"
+#include "include/tictactoe.h"
 #include "ui_tictactoe.h"
 #include <QTimer>
 
@@ -50,11 +50,11 @@ void TicTacToe::switch_player(){
     ui->turn->setText(turn);
 }
 
-/*It makes a move in random position on the board*/
+/*It makes a move in a random position on the board*/
 void TicTacToe::random_move(){
     int x, y;
-    x = (int) (rand()/(RAND_MAX + 1.0) * 3);
-    y = (int) (rand()/(RAND_MAX + 1.0) * 3);
+    x = (int) (rand()/(RAND_MAX + 1.0) * 3); //0-2
+    y = (int) (rand()/(RAND_MAX + 1.0) * 3); //0-2
     if(board[x][y]->text() == ""){  //checking if empty
         n_moves++;
         board[x][y]->setText(player);
@@ -64,7 +64,7 @@ void TicTacToe::random_move(){
     }
 }
 
-/*Checking for a winner*/
+/*Checks for a winner*/
 bool TicTacToe::is_winner() {
     int Xc, Oc;
     // Checking rows
@@ -109,9 +109,8 @@ bool TicTacToe::is_winner() {
     return false;
 }
 
-/*Checking for a draw*/
+/*Checks for a draw*/
 bool TicTacToe::is_draw(){
-    gameEnd = true;
     return (n_moves == 9);  //when the board is full
 }
 
@@ -122,7 +121,7 @@ bool TicTacToe::game_is_over(){
 
 /*Board button handler, It manages the game with each click*/
 void TicTacToe::on_gridButtonClicked() {
-    QPushButton *clickedButton = qobject_cast<QPushButton*>(sender());//detecting which button is clicked
+    QPushButton *clickedButton = qobject_cast<QPushButton*>(sender());//detects which button is clicked
     if (clickedButton && !game_is_over()) {
         if (clickedButton->text() == "") { //checking whether this position is empty
             clickedButton->setText(player);
@@ -130,13 +129,13 @@ void TicTacToe::on_gridButtonClicked() {
             if (is_winner()) { //checking for a winner
                 QString text = "The winner is player " + player;
                 ui->result->setText(text);
-                ui->turn->setText("");
+                ui->turn->setText("");  //clearing the turn text
                 gameEnd = true;
                 return;
             } else if (is_draw()) { //checking for a draw
                 QString text = "Draw, no one wins!";
                 ui->result->setText(text);
-                ui->turn->setText("");
+                ui->turn->setText("");  //clearing the turn text
                 gameEnd = true;
                 return;
             }
@@ -147,13 +146,13 @@ void TicTacToe::on_gridButtonClicked() {
                     if (is_winner()) {  //checking for a winner
                         QString text = "The winner is player " + player;
                         ui->result->setText(text);
-                        ui->turn->setText("");
+                        ui->turn->setText("");  //clearing the turn text
                         gameEnd = true;
                         return;
                     } else if (is_draw()) { //checking for a draw
                         QString text = "Draw, no one wins!";
                         ui->result->setText(text);
-                        ui->turn->setText("");
+                        ui->turn->setText("");  //clearing the turn text
                         gameEnd = true;
                         return;
                     }
@@ -163,7 +162,6 @@ void TicTacToe::on_gridButtonClicked() {
         }
     }
 }
-
 
 /*This button resets the game info to how it was in the beginning of the game*/
 void TicTacToe::on_reset_clicked()
@@ -176,7 +174,7 @@ void TicTacToe::on_reset_clicked()
     ui->result->setText("");
     for (int i = 0; i < n_rows; ++i) {
         for (int j = 0; j < n_cols; ++j) {
-            board[i][j]->setText(""); //emptying the board
+            board[i][j]->setText(""); //clearing the board
         }
     }
 }

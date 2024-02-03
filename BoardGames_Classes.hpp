@@ -28,6 +28,7 @@ public:
 
 };
 
+//For future adjustment
 // class Player{
 // protected:
 //     QString name;

@@ -1,11 +1,11 @@
-#include "mainwindow.h"
+#include "include/mainwindow.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     MainWindow w;
-    w.setWindowTitle("XO Hub");
+    w.setWindowTitle("XO Hub"); //setting window title
     w.show();
     return a.exec();
 }
